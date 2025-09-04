@@ -354,3 +354,27 @@ The application features a clean, modern interface with a gradient background an
 - **Accessibility**: High contrast ratios and readable typography
 
 This design document provides a comprehensive overview of the technical decisions, architecture, and implementation strategy for the URL Shortener application, ensuring it meets all evaluation requirements while maintaining production-quality standards.
+
+
+## Application Screenshots
+
+### Main Interface - Desktop View
+The application features a clean, modern interface with a gradient background and card-based layout:
+
+**Screenshot 1: Initial Application State**
+
+![Initial Application State](C:\Users\krish\Desktop\22891A0576\screen shots\Screenshot 2025-09-04 121010.png)
+
+- Left panel: URL shortening form with input fields for original URL, custom shortcode, and validity period  
+- Right panel: Empty state showing "No URLs shortened yet" message  
+- Clean form design with proper labeling and helper text  
+- Responsive button styling with hover effects  
+
+**Screenshot 2: Mobile/Responsive View**
+
+![Mobile Responsive View](C:\Users\krish\Desktop\22891A0576\screen shots\Screenshot 2025-09-04 121351.png)
+
+- Stacked layout for smaller screens  
+- Form maintains full functionality in mobile view  
+- Proper spacing and touch-friendly interface elements  
+- Consistent branding and color scheme across devices  
