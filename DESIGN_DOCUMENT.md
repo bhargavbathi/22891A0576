@@ -323,4 +323,34 @@ export class Logger {
 - Static file serving
 - Browser compatibility polyfills
 
+## Application Screenshots
+
+### Main Interface - Desktop View
+The application features a clean, modern interface with a gradient background and card-based layout:
+
+**Screenshot 1: Initial Application State**
+- Left panel: URL shortening form with input fields for original URL, custom shortcode, and validity period
+- Right panel: Empty state showing "No URLs shortened yet" message
+- Clean form design with proper labeling and helper text
+- Responsive button styling with hover effects
+
+**Screenshot 2: Mobile/Responsive View**
+- Stacked layout for smaller screens
+- Form maintains full functionality in mobile view
+- Proper spacing and touch-friendly interface elements
+- Consistent branding and color scheme across devices
+
+### Key UI Features Demonstrated:
+1. **Form Validation**: Real-time input validation with helpful placeholder text
+2. **User Guidance**: Clear instructions like "Leave empty for auto-generated shortcode"
+3. **Accessibility**: Proper form labels and semantic HTML structure
+4. **Visual Hierarchy**: Clear distinction between form sections and content areas
+5. **Responsive Design**: Adapts seamlessly to different screen sizes
+
+### Design Principles Applied:
+- **Modern Aesthetics**: Gradient backgrounds and card-based layouts
+- **User Experience**: Intuitive form flow and clear call-to-action buttons
+- **Consistency**: Uniform styling across all interface elements
+- **Accessibility**: High contrast ratios and readable typography
+
 This design document provides a comprehensive overview of the technical decisions, architecture, and implementation strategy for the URL Shortener application, ensuring it meets all evaluation requirements while maintaining production-quality standards.
