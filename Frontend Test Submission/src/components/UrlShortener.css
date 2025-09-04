@@ -1,0 +1,251 @@
+.url-shortener {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+.shortener-form {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.shortener-form h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #555;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #e1e5e9;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.form-group small {
+  display: block;
+  margin-top: 5px;
+  color: #666;
+  font-size: 0.85rem;
+}
+
+button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 100%;
+}
+
+button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.error-message {
+  background: #fee;
+  color: #c53030;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-top: 15px;
+  border-left: 4px solid #c53030;
+}
+
+.success-message {
+  background: #f0fff4;
+  color: #38a169;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-top: 15px;
+  border-left: 4px solid #38a169;
+}
+
+.urls-list {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.urls-list h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.no-urls {
+  text-align: center;
+  color: #666;
+  font-style: italic;
+  padding: 40px 20px;
+}
+
+.urls-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.url-card {
+  border: 2px solid #e1e5e9;
+  border-radius: 8px;
+  padding: 20px;
+  transition: border-color 0.3s ease, transform 0.2s ease;
+}
+
+.url-card:hover {
+  border-color: #667eea;
+  transform: translateY(-1px);
+}
+
+.url-card.expired {
+  border-color: #fed7d7;
+  background: #fffafa;
+}
+
+.url-info {
+  margin-bottom: 15px;
+}
+
+.short-url, .original-url {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.short-url strong, .original-url strong {
+  color: #333;
+  min-width: 80px;
+}
+
+.clickable-url {
+  color: #667eea;
+  cursor: pointer;
+  text-decoration: underline;
+  font-family: monospace;
+  font-size: 0.9rem;
+}
+
+.clickable-url:hover {
+  color: #764ba2;
+}
+
+.truncated-url {
+  color: #666;
+  font-size: 0.9rem;
+  word-break: break-all;
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.metadata {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 10px;
+}
+
+.expired-label {
+  color: #c53030;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.url-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.copy-btn, .delete-btn {
+  width: auto;
+  padding: 8px 16px;
+  font-size: 14px;
+}
+
+.copy-btn {
+  background: #38a169;
+}
+
+.copy-btn:hover {
+  box-shadow: 0 3px 10px rgba(56, 161, 105, 0.4);
+}
+
+.delete-btn {
+  background: #e53e3e;
+}
+
+.delete-btn:hover {
+  box-shadow: 0 3px 10px rgba(229, 62, 62, 0.4);
+}

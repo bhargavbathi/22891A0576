@@ -1,0 +1,19 @@
+{
+  "name": "logging-middleware",
+  "version": "1.0.0",
+  "description": "Custom logging middleware for Campus Hiring Evaluation",
+  "main": "src/logger.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "dependencies": {
+    "typescript": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0"
+  },
+  "keywords": ["logging", "middleware", "typescript"],
+  "author": "Campus Hiring Candidate",
+  "license": "MIT"
+}
